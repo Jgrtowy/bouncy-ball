@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="style.css" />
+		<script src='main.js' defer></script>
+		<title></title>
+	</head>
+	<body onload="rysuj()">
+		<div>
+			<h1>Ustawienia</h1>
+			<input type="checkbox" id="trail"> <label for="trail">Ślad</label><br>
+			<input type="checkbox" id="color" > <label for="color">Inny kolor po każdym odbiciu</label><br>
+			<input type="number" id="speed" value="20"><label for="speed">Prędkość ogólna (w ms)</label><br>
+			<input type="number" id="speedX" class='speed' value="6"><label for="speedX">Prędkość poziomo</label><br>
+			<input type="number" id="speedY" class='speed' value="2"><label for="speedY">Prędkość pionowo</label><br>
+		</div>
+		<div id="d">
+			<canvas id="c" width="400" height="400"></canvas>
+		</div>
+		<script type='module' src='event.js'></script>
+	</body>
+</html>
